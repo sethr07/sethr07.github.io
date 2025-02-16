@@ -208,7 +208,7 @@ body.contact-page {
    grid-row: 2;
    width: 100%;
    height: 100%;
-   object-fit: cover;
+   object-fit: contain;
 }
 
 /* Specific styles for Noida International Airport section */
