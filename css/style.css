@@ -1,0 +1,601 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* General styles */
+html, body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+   overflow-x: hidden;
+   color: white;
+}
+
+header, footer {
+   background-color: transparent; /* Ensure no background color */
+   color: white;
+   padding: 2em;
+}
+
+footer{
+   background-color: transparent;
+   color: white;
+   padding: 2em;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   text-align: left;
+}
+
+.header-left {
+   display: flex;
+   align-items: center;
+}
+
+.logo img {
+   width: 100px; /* Adjust the width as needed */
+   height: auto; /* Maintain aspect ratio */
+}
+
+.header-right {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   flex-grow: 1;
+}
+
+.header-right nav ul {
+   list-style-type: none;
+   padding: 0;
+   margin: -60px 0 0 0;
+   display: flex;
+}
+
+.header-right nav ul li {
+   margin-right: 3em;
+}
+
+.header-right nav ul li a {
+   font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+   color: white;
+   text-decoration: none;
+}
+
+main {
+   padding: 0; /* Remove padding to ensure full width */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.center-content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100vh; /* Full viewport height */
+   text-align: center;
+   padding: 2rem;
+   border-radius: 10px;
+   color: white; /* Ensure text color is white for readability */
+}
+
+.center-content h1 {
+   font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+   font-size: 6rem;
+   margin-top: -20rem;
+   margin-bottom: 1rem;
+}
+
+.center-content p {
+   font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+   text-align: center;
+   font-size: 1.5rem;
+   margin-top: 5px;
+   margin-bottom: 1.5rem;
+   line-height: 1.7;
+}
+
+.center-content ul {
+   font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+   list-style-type: none; /* Remove bullet points */
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+
+.center-content ul li {
+   font-size: 1.2rem; /* Adjust font size as needed */
+   margin-bottom: 0.5rem; /* Add some spacing between items */
+   display: flex;
+   justify-content: center;
+   width: 300px; /* Adjust width as needed */
+}
+
+.social-icons {
+   margin-top: 1.5rem;
+}
+
+.social-icons a {
+   color: white;
+   font-size: 2rem;
+   margin: 0 1rem;
+   text-decoration: none;
+}
+
+.social-icons a:hover {
+   color: #ccc; /* Change color on hover */
+}
+
+/* Specific styles for index.html */
+body.index-page {
+   background: url('../images/home-bg.png') no-repeat center center fixed; /* Set background image */
+   background-size: cover;
+}
+
+/* Specific styles for contact.html */
+body.contact-page {
+   background-color: black; /* Set background color to black */
+}
+
+/* Section styles */
+#vero-coffee, #noida-airport, #dyavol-x {
+   width: 100vw; /* Full viewport width */
+   min-height: 100vh; /* Full viewport height */
+   padding: 2rem;
+   text-align: left; /* Align text to the left */
+   background-color: #333; /* Dark grey background */
+   color: white; /* White text */
+   position: relative; /* Add relative positioning */
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   box-sizing: border-box;
+}
+
+.section-heading {
+   font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+   font-size: 3rem; /* Increase font size */
+   margin-bottom: 0.5rem; /* Add space below the heading */
+}
+
+.section-subheading {
+   font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+   font-size: 1.5rem; /* Subheading font size */
+   margin-bottom: 2rem; /* Add space below the subheading */
+}
+
+/* Specific styles for Vero Coffee section */
+.vero-content{
+   background-color: #333;
+   height: auto;
+}
+
+.vero-content .images {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: auto 900px;
+   gap: 1rem;
+}
+
+.vero-content .images img:nth-child(1)
+{
+   grid-column: span 2;
+   grid-row: 1;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+
+}
+
+.vero-content .images img:nth-child(2) {
+   grid-column: 3;
+   grid-row: 1;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+
+}
+
+.vero-content .images img:nth-child(3),
+.vero-content .images img:nth-child(4),
+.vero-content .images img:nth-child(5) {
+   grid-column: span 1;
+   grid-row: 2;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+/* Specific styles for Noida International Airport section */
+.noida-content {
+   background-color: #333;
+   gap: 1rem;
+}
+
+.noida-content .images {
+   display: grid;
+   grid-template-columns: 1fr, 1fr;
+   grid-template-rows: 1fr, 1fr;
+   gap: 1rem;
+}
+
+.noida-content .images img:nth-child(1){
+   grid-column: 1;
+   grid-row: 1;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.noida-content .images img:nth-child(2) {
+   grid-column: 1;
+   grid-row: 2;
+   width: 100%; /* Ensure images take full width */
+   height: 100%; /* Maintain aspect ratio */
+   object-fit: cover;
+}
+
+.noida-content .images img:nth-child(3) {
+   grid-column: 2;
+   grid-row: 1 / 3;
+   width: 100%; /* Ensure image takes full width */
+   height: 100%; /* Maintain aspect ratio */
+   object-fit: cover;
+}
+
+/* Specific styles for D'YAVOL X section */
+.dyavol-content{
+   background-color: #333;
+}
+
+.dyavol-content .images {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1rem;
+}
+
+.dyavol-content .images img:nth-child(1),
+.dyavol-content .images img:nth-child(2),
+.dyavol-content .images img:nth-child(3) {
+   grid-column: span 1;
+   grid-row: 1;
+   width: 100%; /* Ensure images take full width */
+   height: auto; /* Maintain aspect ratio */
+}
+
+.dyavol-content .images img:nth-child(4) {
+   grid-column: span 3;
+   grid-row: 2;
+   width: 100%; /* Ensure image takes full width */
+   height: auto; /* Maintain aspect ratio */
+}
+
+.vero-content .read-more, .noida-content .read-more, .dyavol-content .read-more {
+   position: absolute;
+   top: 4rem;
+   right: 4rem;
+}
+
+.vero-content .read-more button, 
+.noida-content .read-more button, 
+.dyavol-content .read-more button {
+   padding: 1rem 2rem;
+   cursor: pointer;
+   display: inline-block;
+   margin: 1rem 0;
+   padding: 1rem 2rem;
+   background-color: #263A99;
+   color: white;
+   text-decoration: none;
+   border-radius: 8px;
+   font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+   font-weight: 600; /* Apply semi-bold typeface */
+   font-size: 1.2rem;
+}
+
+.vero-content .read-more button:hover, .noida-content .read-more button:hover, .dyavol-content .read-more button:hover {
+   background-color: #555;
+}
+
+.resume-button {
+   display: inline-block;
+   margin: 1rem 0;
+   padding: 1rem 2rem;
+   background-color: #263A99;
+   color: white;
+   text-decoration: none;
+   border-radius: 8px;
+   font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+   font-weight: 600; /* Apply semi-bold typeface */
+   font-size: 1.2rem;
+}
+
+/* Specific styles for aboutme.html */
+body.aboutme-page {
+   background: linear-gradient(to bottom, #585858, #2B2B2B); /* Gradient background */
+   background-size: cover;
+}
+
+.about-content {
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   padding: 2rem;
+}
+
+.about-photo {
+   width: 489px;
+   height: 804px;
+   margin-right: 2rem;
+}
+
+.about-text {
+   max-width: 705px;
+}
+
+.about-text h1 {
+   font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+   font-size: 4.5rem;
+   margin-bottom: 3rem;
+   margin-top: -10px;
+}
+
+.about-text p {
+   font-size: 1.4rem;
+   line-height: 1.6;
+}
+
+/* Specific styles for myart.html */
+body.myart-page {
+   background: linear-gradient(to bottom, #2A2829, #000000); /* Gradient background */
+   background-size: cover;
+   background-attachment: fixed;
+   font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+}
+
+.myart-main h1 {
+   font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+   font-size: 4rem; /* Increase font size */
+   margin-top: -20px; /* Move the heading 20 pixels up */
+}
+
+.myart-main p {
+   font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+   font-size: 2rem; /* Increase font size */
+   margin-top: 10px; /* Move the heading 20 pixels up */
+}
+
+.myart-main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   padding: 2rem;
+}
+
+.gallery {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1rem;
+   padding: 2rem;
+}
+
+.gallery img {
+   width: 100%;
+   height: auto;
+   border-radius: 10px;
+}
+
+.gallery img:nth-child(1) {
+   grid-column: 1;
+   grid-row: 1;
+}
+
+.gallery img:nth-child(2) {
+   grid-column: 2;
+   grid-row: 1;
+}
+
+.gallery img:nth-child(3) {
+   grid-column: 3;
+   grid-row: 1;
+}
+
+.gallery img:nth-child(4) {
+   grid-column: 1;
+   grid-row: 2;
+}
+
+.gallery img:nth-child(5) {
+   grid-column: 2;
+   grid-row: 2 / 4; /* Span two rows */
+}
+
+.gallery img:nth-child(6) {
+   grid-column: 3;
+   grid-row: 2;
+}
+
+.gallery img:nth-child(7) {
+   grid-column: 1;
+   grid-row: 3;
+}
+
+.gallery img:nth-child(8) {
+   grid-column: 3;
+   grid-row: 3;
+}
+
+.gallery img:nth-child(9) {
+   grid-column: 1;
+   grid-row: 4;
+   height: 1017px;
+}
+
+.gallery img:nth-child(10) {
+   grid-column: 2 / 4;
+   grid-row: 4;
+   height: 1017px;
+}
+
+.scrollable-container {
+   max-height: 80vh; /* Adjust this to control the container height */
+   overflow-y: auto;
+   margin: 2rem auto;
+   padding: 1rem;
+   background-color: #222; /* Optional: set a background to highlight the area */
+}
+
+.scrollable-container img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+/* PDF container styling for vero-readmore.html */
+.pdf-container {
+   width: 100%;
+   height: 90vh;  /* Adjust the height as needed */
+   overflow-y: auto;
+   margin: 2rem auto;
+   padding: 1rem;
+   background-color: #222; /* Optional background color */
+}
+
+.pdf-container iframe {
+   width: 100%;
+   height: 100%;
+   border: none;
+}
+
+
+ body.verocoffee-page {
+   background-color: #F0EBE5;
+   background-size: cover;
+}
+
+/* ----- Vero Coffee Read More Page Styles ----- */
+
+/* Ensure the background color is applied and override global text color */
+body.verocoffee-page {
+   background-color: #F0EBE5;
+   background-size: cover;
+   color: #333; /* Set text to dark for contrast on light bg */
+   text-align: center;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ /* Header: keep logo and shortcuts */
+ body.verocoffee-page header {
+   text-align: left;
+   padding: 1rem;
+ }
+ 
+ body.verocoffee-page header .logo img {
+   max-width: 150px;
+ }
+ 
+ /* Navigation remains unchanged */
+ body.verocoffee-page nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   gap: 1rem;
+ }
+ 
+ /* Main content styling for Vero Coffee page */
+ body.verocoffee-page main {
+   padding: 2rem;
+ }
+ 
+ /* Title styles */
+ body.verocoffee-page h1 {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 3rem;
+   margin-bottom: 1rem;
+   color: #333;
+ }
+ 
+ body.verocoffee-page h2 {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 4rem;
+   margin-bottom: 1rem;
+   color: #333;
+   text-align: left;
+}
+
+
+body.verocoffee-page p {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 2rem;
+   margin-bottom: 1rem;
+   line-height: 1.6;
+   color: #333;
+   text-align: left;
+}
+
+ /* Subtitle style */
+ body.verocoffee-page .subtitle {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1.5rem;
+   margin-bottom: 0.5rem;
+   color: #333;
+ }
+ 
+ /* Roles list style */
+ body.verocoffee-page .roles {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1.2rem;
+   margin-bottom: 2rem;
+   color: #333;
+ }
+ 
+ /* Full-width image style */
+ body.verocoffee-page .fullwidth-img {
+   width: 100%;
+   height: auto;
+   display: block;
+   margin-bottom: 4rem;
+ }
+
+ /* Align headings on the same line */
+body.verocoffee-page .heading-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+ 
+ /* Style for the small, bold right-hand heading */
+ body.verocoffee-page .heading-container .right-heading {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 2rem; /* smaller than the h2 (4rem) */
+   font-weight: bold;
+   color: #333;
+   margin-right: 2rem;
+ }
+
+ /* Align headings on the same line */
+body.verocoffee-page .heading-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+ 
+ /* Style for the right-hand paragraph with TYPE and substrings */
+ body.verocoffee-page .heading-container p.right-heading {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 2rem; /* Adjust size as needed */
+   font-weight: bold;
+   color: #333;
+   text-align: right;
+   margin-right: 2rem;
+   margin-top: 6rem;       /* Remove default margin */
+   align-self: flex-start;
+   line-height: 1.5; /* Adjust spacing between lines */
+ }

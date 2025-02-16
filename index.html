@@ -1,79 +1,95 @@
-<!doctype html>
-<html>
-  <head>
-    <!-- Page setup -->
-    <meta charset="utf-8">
-    <title>Your title here</title>
-    <meta name="description" content="A brief description of your site for search engines">
-    <meta name="author" content="Information about the author here">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <link rel="icon" type="image/png" href="favicon.png">
-  
-    <!-- Stylesheets -->
-    <!-- Reset default styles and add support for google fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-   
-    <!-- Custom styles -->
-    <link href="style.css" rel="stylesheet" type="text/css" />
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
-
-    <!-- Want to add Bootstrap? -->
-    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
-    
-  </head>
-  
-  <body>
-
-    <header id="header">
-      <img src="logo.jpg">
-      <h1>Simple Website</h1>
-      
-      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
-      <ul class="main-menu">
-        <li><a href="#home">home</a></li>
-        <li><a href="#about">about</a></li>
-        <li><a href="#contact">contact</a></li>
-      </ul>                 
-    </header>
-   
-    <div id="container">
-      <div class="inner">
-        <div id="content"> 
-          
-          <div id="home" class="content-region hide">
-            <h2>Home</h2>
-            <p>
-              This is a simple website template published with Github Pages. <a href="https://github.com/cpl-makerlab/simple-website-template">Fork this repository</a> to create your own site!
-            </p>
-          </div>
-          
-          <div id="about" class="content-region hide">
-            <h2>About</h2>
-            <p>
-              Sed tempus urna et pharetra pharetra massa massa ultricies. Porttitor rhoncus dolor purus non enim praesent. Id aliquet risus feugiat in ante metus dictum. 
-            </p>
-          </div>
-          
-          <div id="contact" class="content-region hide">
-            <h2>Contact</h2>
-            <p>
-              Pellentesque nec nam aliquam sem et tortor consequat. Quisque sagittis purus sit amet volutpat consequat. Magna eget est lorem ipsum dolor. 
-            </p>
-          </div>
-          
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> <!-- Include Montserrat font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Include Font Awesome -->
+</head>
+<body class="index-page">
+    <header>
+        <div class="header-left">
+            <div class="logo">
+               <a href="index.html" class="logo">
+               <img src="images/home-logo.png" alt="Home Logo">
+               </a>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <footer>  
-      Footer region
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <li><a href="myart.html">MY ART</a></li>
+                    <li><a href="aboutme.html">ABOUT ME</a></li>
+                    <li><a href="contact.html">CONTACT ME</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="intro">
+            <div class="center-content">
+                <h1>Rhea Seth</h1>
+                <p>With a foundation from Pratt Institute, New York, I’ve shaped my practice around designing for <br>
+                    empathy—where every detail is intentional, and every interaction tells a story. I see design as more <br>
+                    than just visuals it’s a language of connection, shaped by empathy and intent.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="https://www.linkedin.com/in/rhea-seth07/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.behance.net" target="https://www.behance.net/rheaseth2/projects"><i class="fab fa-behance"></i></a>
+                </div>
+            </div>
+        </section>
+        <section id="vero-coffee">
+            <div class="vero-content">
+                <h2 class="section-heading">1. Vero Coffee</h2>
+                <p class="section-subheading">A cozy coffee shop with a modern twist.</p>
+                <div class="images">
+                    <img src="images/vero_image1.png" alt="Vero Image 1" class="image1">
+                    <img src="images/vero_image2.png" alt="Vero Image 2" class="image2">
+                    <img src="images/vero_image3.png" alt="Vero Image 3" class="image3">
+                    <img src="images/vero_image4.png" alt="Vero Image 4" class="image4">
+                    <img src="images/vero_image5.png" alt="Vero Image 5" class="image5">
+                </div>
+                <div class="read-more">
+                    <button onclick="location.href='vero-readmore.html'">Read More</button>
+                </div>
+            </div>
+        </section>
+        <section id="noida-airport">
+            <div class="noida-content">
+                <h2 class="section-heading">2. Noida International Airport</h2>
+                <p class="section-subheading">A state-of-the-art airport in Noida.</p>
+                <div class="images">
+                    <img src="images/noida_image1.png" alt="Noida Image 1" class="image1">
+                    <img src="images/noida_image2.png" alt="Noida Image 2" class="image2">
+                    <img src="images/noida_image3.png" alt="Noida Image 3" class="image3">
+                </div>
+                <div class="read-more">
+                    <button onclick="location.href='#'">Read More</button>
+                </div>
+            </div>
+        </section>
+        <section id="dyavol-x">
+            <div class="dyavol-content">
+                <h2 class="section-heading">3. D'YAVOL X</h2>
+                <p class="section-subheading">A luxury fashion brand with a dark edge.</p>
+                <div class="images">
+                    <img src="images/dyavol_image1.png" alt="D'YAVOL X Image 1" class="image1">
+                    <img src="images/dyavol_image2.png" alt="D'YAVOL X Image 2" class="image2">
+                    <img src="images/dyavol_image3.png" alt="D'YAVOL X Image 3" class="image3">
+                    <img src="images/dyavol_image4.png" alt="D'YAVOL X Image 4" class="image4">
+                </div>
+                <div class="read-more">
+                    <button onclick="location.href='#'">Read More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Rhea Seth Portfolio</p>
     </footer>
-    
-    <!-- Load additional JS scripts here -->
-    <script type="text/javascript" src="script.js"></script>
-    
-  </body>
+    <script src="js/script.js"></script>
+</body>
 </html>
