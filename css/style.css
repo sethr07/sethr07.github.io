@@ -226,14 +226,31 @@ body.contact-page {
 /* Specific styles for Noida International Airport section */
 .noida-content {
    background-color: #333;
-   gap: 1rem;
 }
 
 .noida-content .images {
    display: grid;
    grid-template-columns: 1fr, 1fr;
-   grid-template-rows: 1fr, 1fr;
    gap: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+   .noida-content .images {
+      grid-template-columns: 1fr;
+   }
+}
+
+@media (max-width: 768px) {
+   .noida-content .images {
+      grid-template-columns: 1fr;
+   }
+}
+
+@media (max-width: 480px) {
+   .noida-content .images {
+      grid-template-columns: 1fr;
+   }
 }
 
 .noida-content .images img:nth-child(1){
@@ -284,6 +301,46 @@ body.contact-page {
    grid-row: 2;
    width: 100%; /* Ensure image takes full width */
    height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+   .noida-content .images,
+   .dyavol-content .images {
+      grid-template-columns: 1fr;
+   }
+   .vero-content .images img:nth-child(3),
+   .vero-content .images img:nth-child(4),
+   .vero-content .images img:nth-child(5) {
+      grid-column: span 1;
+      grid-row: auto;
+   }
+}
+
+@media (max-width: 768px) {
+   .noida-content .images,
+   .dyavol-content .images {
+      grid-template-columns: 1fr;
+   }
+   .vero-content .images img:nth-child(3),
+   .vero-content .images img:nth-child(4),
+   .vero-content .images img:nth-child(5) {
+      grid-column: span 1;
+      grid-row: auto;
+   }
+}
+
+@media (max-width: 480px) {
+   .noida-content .images,
+   .dyavol-content .images {
+      grid-template-columns: 1fr;
+   }
+   .vero-content .images img:nth-child(3),
+   .vero-content .images img:nth-child(4),
+   .vero-content .images img:nth-child(5) {
+      grid-column: span 1;
+      grid-row: auto;
+   }
 }
 
 .vero-content .read-more, .noida-content .read-more, .dyavol-content .read-more {
