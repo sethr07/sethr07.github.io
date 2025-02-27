@@ -1,38 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>My Art</title>
-   <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Art</title>
+
+  <!-- Montserrat font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Tailwind CSS via CDN -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.7/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
 </head>
-<body class="myart-page">
-   <header>
-      <a href="index.html" class="logo">
-         <img src="images/myart_logo.png" alt="Logo">
-      </a>
-      <div class="shortcuts">
-         <!-- Add your shortcut keys here -->
-      </div>
-   </header>
-   <main class="myart-main">
-      <h1>MY ART</h1>
-      <p>Here's a glimpse of things I've made, photos I have taken and edit :)</p>
-      <div class="gallery">
-         <img src="images/my_art1.png" alt="Art 1">
-         <img src="images/my_art2.png" alt="Art 2">
-         <img src="images/my_art3.png" alt="Art 3">
-         <img src="images/my_art4.png" alt="Art 4">
-         <img src="images/my_art5.png" alt="Art 5">
-         <img src="images/my_art6.png" alt="Art 6">
-         <img src="images/my_art7.png" alt="Art 7">
-         <img src="images/myart_8.png" alt="Art 8">
-         <img src="images/my_art9.png" alt="Art 9">
-         <img src="images/my_art10.png" alt="Art 10">
-      </div>
-   </main>
-   <footer>
-      <p>&copy; Rhea Seth Portfolio</p>
+<body
+  class="min-h-screen text-white font-sans flex flex-col items-center"
+  style="
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, #2A2829, #000000);
+    background-attachment: fixed;
+    background-size: cover;
+  "
+>
+  <!-- Header -->
+  <header class="p-4 w-full flex items-center justify-between">
+    <!-- Logo left-aligned -->
+    <a href="index.html" class="flex items-center">
+      <img
+        src="images/myart_logo.png"
+        alt="Logo"
+        class="w-24 h-auto"
+      />
+    </a>
+    <!-- If you have any shortcuts or nav items, put them on the right -->
+    <div class="shortcuts"></div>
+  </header>
+
+  <!-- Main content -->
+  <main class="flex flex-col items-center w-full px-4">
+    <h1 class="text-4xl md:text-5xl font-bold mt-4 mb-2 text-center w-full">
+      MY ART
+    </h1>
+    <p class="text-lg md:text-xl mb-8 text-center w-full">
+      Here's a glimpse of things I've made, photos I've taken and edited :)
+    </p>
+
+    <!-- Responsive gallery grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-5xl w-full">
+      <img src="images/my_art1.png" alt="Art 1" class="w-full h-auto rounded shadow" />
+      <img src="images/my_art2.png" alt="Art 2" class="w-full h-auto rounded shadow" />
+      <img src="images/my_art3.png" alt="Art 3" class="w-full h-auto rounded shadow" />
+      <img src="images/my_art4.png" alt="Art 4" class="w-full h-auto rounded shadow" />
+      <img src="images/my_art5.png" alt="Art 5" class="w-full h-auto rounded shadow" />
+      <img src="images/my_art6.png" alt="Art 6" class="w-full h-auto rounded shadow" />
+      <img src="images/my_art7.png" alt="Art 7" class="w-full h-auto rounded shadow" />
+      <img src="images/myart_8.png" alt="Art 8" class="w-full h-auto rounded shadow" />
+      <img src="images/my_art9.png" alt="Art 9" class="w-full h-auto rounded shadow" />
+      <img src="images/my_art10.png" alt="Art 10" class="w-full h-auto rounded shadow" />
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="p-4 text-center w-full mt-auto">
+    <p class="text-sm">&copy; Rhea Seth Portfolio</p>
   </footer>
 </body>
 </html>
