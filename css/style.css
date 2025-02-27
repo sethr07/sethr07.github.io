@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
    margin: 0;
    padding: 0;
@@ -24,7 +28,7 @@ footer{
    background-color: transparent;
    color: white;
    padding: 2em;
-   position: fixed;
+   position: static;
    bottom: 0;
    left: 0;
    width: 100%;
@@ -85,8 +89,8 @@ main {
 }
 
 .center-content h1 {
-   font-size: 6rem;
-   margin-top: -20rem;
+   font-size: clamp(2rem, 10vw, 5rem);
+   margin-top: 0;
    margin-bottom: 1rem;
 }
 
